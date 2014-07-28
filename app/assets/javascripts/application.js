@@ -15,3 +15,10 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+function countDownCharacters(tb) {
+	var numAvailable = 140;
+	var numUsed = tb.value.length;
+	var numRemaining = numAvailable - numUsed;
+	document.getElementById("count").innerHTML = "Characters left: " + numRemaining;
+}
